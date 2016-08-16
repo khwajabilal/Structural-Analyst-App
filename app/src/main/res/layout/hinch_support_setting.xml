@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Support"
+        android:textSize="15sp"
+        android:background="@drawable/okbuttonspressed"
+        android:id="@+id/AddSupportOk"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="37dp"
+
+        android:layout_below="@+id/AddSupportET"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ADD SUPPORT AT LENGTH"
+        android:textSize="20sp"
+        android:id="@+id/addSupTV"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/AddSupportET"
+        android:layout_below="@+id/addSupTV"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

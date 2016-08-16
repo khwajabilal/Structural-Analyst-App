@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/khw1"
+        android:showAsAction="ifRoom|withText"
+        android:title="Movies"
+        android:icon="@drawable/hinch_support_icon"
+        android:visible="true"/>
+    <item
+        android:id="@+id/khw2"
+        android:showAsAction="ifRoom|withText"
+        android:title="KHw"
+        android:visible="true"
+        android:icon="@drawable/roll_support_icon"/>
+    <item
+        android:id="@+id/khw3"
+        android:showAsAction="ifRoom|withText"
+        android:title="KHW2"
+        android:visible="true"
+        android:icon="@drawable/fixed_support_left_icon"/>
+</menu>

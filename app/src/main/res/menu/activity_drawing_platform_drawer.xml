@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/create_new"
+            android:icon="@drawable/create_new_model"
+            android:title="Create new" />
+        <item
+            android:id="@+id/open_existing"
+            android:icon="@drawable/open_existing_model"
+            android:title="Open existing" />
+        <item
+            android:id="@+id/save_prj"
+            android:icon="@drawable/save"
+            android:title="Save project" />
+        <item
+            android:id="@+id/delete_item"
+            android:icon="@drawable/delete_icon_h"
+            android:title="delete item" />
+        <item
+            android:id="@+id/settings_file"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Other Options">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share Your Project" />
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/exit"
+                android:title="exit" />
+        </menu>
+    </item>
+
+</menu>

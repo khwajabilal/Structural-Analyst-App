@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER THE BEAM LENGTH"
+        android:textSize="20sp"
+        android:id="@+id/beamwidth"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="METERS"
+        android:textSize="20sp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/beamwidet"
+        android:layout_alignRight="@+id/beamwidet"
+        android:layout_alignEnd="@+id/beamwidet" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/beamwidet"
+        android:text="5"
+        android:textSize="15dp"
+        android:layout_below="@+id/beamwidth"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textSize="15dp"
+        android:background="@drawable/okbuttonspressed"
+        android:id="@+id/drawingdialogokbt"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+
+</RelativeLayout>
+
+

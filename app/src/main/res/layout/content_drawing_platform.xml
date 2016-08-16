@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.khwajabilal.structural_a8.DrawingPlatform"
+    tools:showIn="@layout/app_bar_drawing_platform">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:background="#48733c"
+        android:id="@+id/linearLayout">
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/drawing_Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/drawing"
+                    android:onClick="drawingOnClick"
+                    android:background="@drawable/buttonpressed"
+                    android:clickable="true"
+                    android:layout_marginLeft="5dp" />
+                <ImageButton
+                    android:id="@+id/modelDetauls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/editmodel"
+                    android:onClick="modelDetailsOnClick"
+                    android:background="@drawable/buttonpressed"
+                    android:layout_marginLeft="5dp" />
+
+
+
+                <ImageButton
+                    android:id="@+id/add_Support"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/support_dropdown_icon"
+                    android:onClick="addSupport"
+                    android:background="@drawable/buttonpressed"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageButton
+                    android:id="@+id/add_load"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/load_drop_down"
+                    android:onClick="addLoad_OnClick"
+                    android:background="@drawable/buttonpressed"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageButton
+                    android:id="@+id/set_displacements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/displacementicon"
+                    android:onClick="set_displacementsOnClick"
+                    android:background="@drawable/buttonpressed"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageButton
+                    android:id="@+id/analyze_structure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/analyze"
+                    android:onClick="analyze_Structure_OnClick"
+                    android:background="@drawable/buttonpressed"
+                    android:layout_marginLeft="5dp" />
+
+                <ImageButton
+                android:id="@+id/select_material_type"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/material_btn"
+                android:onClick="select_Material_OnClick"
+                    android:background="@drawable/buttonpressed"
+                android:layout_marginLeft="5dp" />
+
+                <ImageButton
+                    android:id="@+id/Selection_Mode_Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/selection"
+                    android:background="@drawable/buttonpressed"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="selectionOnClick" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <com.example.khwajabilal.structural_a8.ZoomableImageView
+        android:id="@+id/drawing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+

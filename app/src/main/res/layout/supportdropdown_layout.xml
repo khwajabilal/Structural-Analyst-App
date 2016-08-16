@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hinch_support"
+        android:src="@drawable/hinch_support_icon"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/roll_support"
+        android:src="@drawable/roll_support_icon"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fixed_right"
+        android:src="@drawable/fixed_support_right_icon"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:src="@drawable/fixed_support_left_icon"
+        android:layout_height="wrap_content"
+        android:id="@+id/fixed_left"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

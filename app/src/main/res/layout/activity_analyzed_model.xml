@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.khwajabilal.structural_a8.AnalyzedModel">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/report_generate_btn"
+        android:text="Generate Report"
+        android:onClick="reportGenerationOnclick" />
+    <com.example.khwajabilal.structural_a8.ZoomableImageView
+    android:id="@+id/analayzed_model"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+        android:layout_below="@+id/report_generate_btn"
+    android:background="#FFFFFFFF"
+    android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
